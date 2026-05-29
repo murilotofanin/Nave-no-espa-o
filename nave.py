@@ -1,6 +1,6 @@
 ##Definir as variaveis
 
-combustivel = 100
+combustivel = 110
 
 tripulantes = []
 
@@ -17,7 +17,7 @@ def viajar():
 
 def abastecer():
     global combustivel
-    combustivel =  100
+    combustivel =  110
 
     print("A nava já esta pronta para viajar denovo, BOA VIAJEM 👍!!! .")
 
