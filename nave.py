@@ -2,7 +2,7 @@
 
 combustivel = 100
 
-tripulantes = []
+tripulantes = [6]
 
 ##Definir funçoes
 def viajar():
@@ -34,14 +34,22 @@ def registrartripulantes():
         tripulantes.append(novotripulante)
         print("Tripulante inseirdo com sucesso!!!")
 
+def removertripulante():
+    global tripulante
 
+    if len(trupulante) ==0:
+        print("\nOs tripulantes restantes são: {tripulantes}")
+
+    else:
+        tripulantes.pop()
+        print(f"\nOs tripulantes restantes são: {tripulantes}")
 
 
 ##Criar um menu
 
 while True:
     print("\nBem vindo ao menu interativo da nave. Por favor  selecione uma opção:")
-    print("\n1 - Mostrar staus da nave | 2- Viajar | 3-Abastecer  | 4- Novo Tripulante | 5-Sair")
+    print("\n1 - Mostrar staus da nave | 2- Viajar | 3-Abastecer  | 4- Novo Tripulante | 5-Sair  | 6-Saida de um tripulante | 7-Tripulantes que ainda estão na nave")
     opcao = input("Escolha:")
     if (opcao == "1"):
         status_nave()
@@ -55,14 +63,15 @@ while True:
         novotripulante()
     elif (opcao =="5"):
         print("Viagem encerrada!!🛬")
+
+    elif (opcao == "6"):
+        tripulantes.pop()
+        print("Tripulante retirado com sucesso👍👍!!")
         break
         
-
-
-
-
-
-
+    elif (opcao =="7"):
+        len(tripulantes)
+        print("Os tripulantes restantes são:")
 
 
 
