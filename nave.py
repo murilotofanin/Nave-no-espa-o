@@ -4,8 +4,13 @@ combustivel = 100
 
 tripulantes = [6]
 
-##Definir funçoes
+##Definir funçoes2
+
 def viajar():
+    if (tripulantes) ==0:
+        print("\nNão contem nenhum tripulante na nave, a nave não podera partir para viajem!!")
+    input()
+    return
     ##Aqui vamos ter que gastar os combustivel
     global combustivel ## Avisa a função que vamos modificar uma variavel interna
     if(combustivel >= 30):
@@ -72,6 +77,14 @@ while True:
     elif (opcao =="7"):
         len(tripulantes)
         print("Os tripulantes restantes são:")
+
+
+    if (tripulantes) ==0:
+        print("\nNão contem nenhum tripulante na nave, a nave não podera partir para viajem!!")
+
+    
+
+        
 
 
 
