@@ -65,7 +65,7 @@ def removertripulante():
 
 while True:
     print("\nBem vindo ao menu interativo da nave. Por favor  selecione uma opção:")
-    print("\n1 - Mostrar staus da nave | 2- Viajar | 3-Abastecer  | 4- Novo Tripulante | 5-Sair  | 6-Saida de um tripulante | 7-Tripulantes que ainda estão na nave")
+    print("\n1 - Mostrar staus da nave | 2- Viajar | 3-Abastecer  | 4- Novo Tripulante | 5-Sair  | 6-Saida de um tripulante 2")
     opcao = input("Escolha:")
     if (opcao == "1"):
         status_nave()
